@@ -24,14 +24,14 @@
   justify-content: space-between;
 }
 #icons2 img {
-  margin: 30px 5px;
+  margin: 25px 5px;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 #img1 {
   width: 70%;
@@ -39,7 +39,7 @@ main {
 #img2 {
   width: 70%;
   margin-top: -265px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 /* .grid {
   border: 1px solid red;
@@ -48,8 +48,7 @@ main {
   display: grid;
   grid-template-areas: "h1 h1 h1 h1 h1" "p p p p p" "icon1 icon2 icon3 icon4 icon5" "icon6 icon6 icon6 icon6 icon6";
   grid-template-columns: 75px 75px 100px 75px;
-  grid-template-rows: 40px 40px 80px 50px;
-  width: 100%;
+  grid-template-rows: 30px 28px 80px 50px;
   justify-content: center;
 }
 #grid > h1 {
@@ -141,4 +140,11 @@ aside {
 }
 .list #points {
   width: 16px;
+}
+footer {
+    margin-top: -30px;
+}
+footer img {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
