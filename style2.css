@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display", sans-serif;
+  color: #fff;
+}
+#container {
+  height: 812px;
+  width: 375px;
+  background-color: #192038;
+  margin: auto;
+  border-radius: 20px;
+  padding: 12px 15px;
+}
+#icons1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-family: "SF Pro Display", sans-serif;
+}
+#icons2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 5px;
+}
+main {
+  margin: 10px 0;
+}
+#search {
+  width: 100%;
+  background-color: #222B45;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  color: #8F9BB3;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#titleList {
+  margin: 30px 0;
+}
+#titleList select {
+  background-color: #192038;
+  border: 0px;
+  font-size: 14px;
+}
+#titleList p {
+  font-size: 10px;
+}
+/* .grid {
+  border: 1px solid red;
+} */
+#grid {
+  display: grid;
+  grid-template-areas: "h1 h1 h1 h1 h1" "p p p p p" "icon1 icon2 icon3 icon4 icon5" "icon6 icon6 icon6 icon6 icon6";
+  grid-template-columns: 75px 75px 100px 75px;
+  grid-template-rows: 30px 28px 80px 50px;
+  justify-content: center;
+}
+#grid > h1 {
+  font-size: 18px;
+  font-weight: 500;
+  grid-area: h1;
+  justify-self: center;
+}
+#grid > p {
+  font-size: 8px;
+  grid-area: p;
+  justify-self: center;
+}
+#icon1 {
+  grid-area: icon1;
+  align-self: center;
+  width: 16.12px;
+}
+#icon2 {
+  grid-area: icon2;
+  align-self: center;
+  width: 15.86px;
+}
+#icon3 {
+  grid-area: icon3;
+  align-self: center;
+  width: 40.29px;
+}
+#icon4 {
+  grid-area: icon4;
+  align-self: center;
+  width: 15.86px;
+}
+#icon5 {
+  grid-area: icon5;
+  align-self: center;
+  width: 21.15px;
+}
+#icon6 {
+  grid-area: icon6;
+  align-self: center;
+  width: 100%;
+}
+#titleList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#titleList > h4 {
+  font-size: 14px;
+}
+#titleList > p {
+  font-size: 10px;
+}
+aside {
+  width: 100%;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  align-items: center;
+}
+.item {
+  display: grid;
+  grid-template-areas: "img date time" "img h5 h5";
+  grid-template-columns: 60px 80px 170px;
+  grid-template-rows: 30px 20px;
+  align-items: center;
+}
+.list #img {
+  grid-area: img;
+  width: 48px;
+}
+.list #date {
+  grid-area: date;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.list #time {
+  grid-area: time;
+  font-size: 8px;
+}
+.list h5 {
+  grid-area: h5;
+  font-size: 14px;
+  align-self: self-start;
+}
+.list #points {
+  width: 16px;
+}
+footer {
+    margin-top: -30px;
+}
+footer img {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
