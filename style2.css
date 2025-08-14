@@ -38,75 +38,64 @@ main {
   font-size: 14px;
   margin-top: 20px;
 }
-#titleList {
+#categories {
   margin: 30px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#titleList select {
+#categories select {
   background-color: #192038;
   border: 0px;
   font-size: 14px;
 }
-#titleList p {
+#categories > p {
   font-size: 10px;
 }
-/* .grid {
-  border: 1px solid red;
-} */
-#grid {
-  display: grid;
-  grid-template-areas: "h1 h1 h1 h1 h1" "p p p p p" "icon1 icon2 icon3 icon4 icon5" "icon6 icon6 icon6 icon6 icon6";
-  grid-template-columns: 75px 75px 100px 75px;
-  grid-template-rows: 30px 28px 80px 50px;
+#squares {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+#squares > div {
+  width: 82px;
+  height: 95px;
+  padding: 40px;
+  background-color: #222B45;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-}
-#grid > h1 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
-  grid-area: h1;
-  justify-self: center;
 }
-#grid > p {
-  font-size: 8px;
-  grid-area: p;
-  justify-self: center;
+#squares > div:nth-child(1) {
+  background: linear-gradient(130deg, #F5AF19, #F12711);
 }
-#icon1 {
-  grid-area: icon1;
-  align-self: center;
-  width: 16.12px;
+#squares > div:nth-child(2) {
+  background: linear-gradient(130deg, #623DEF, #340FD1);
 }
-#icon2 {
-  grid-area: icon2;
-  align-self: center;
-  width: 15.86px;
+#squares > div:nth-child(3) {
+  background: linear-gradient(130deg, #43EF1D, #0D80F2);
 }
-#icon3 {
-  grid-area: icon3;
-  align-self: center;
-  width: 40.29px;
+#squares > div:nth-child(4) {
+  background: linear-gradient(130deg, #E9228D, #F12711);
 }
-#icon4 {
-  grid-area: icon4;
-  align-self: center;
-  width: 15.86px;
-}
-#icon5 {
-  grid-area: icon5;
-  align-self: center;
-  width: 21.15px;
-}
-#icon6 {
-  grid-area: icon6;
-  align-self: center;
-  width: 100%;
+#squares > div:nth-child(5) {
+  background: linear-gradient(130deg, #d7ee05, #f51d05);
 }
 #titleList {
+  margin: 25px 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 #titleList > h4 {
+  background-color: #192038;
+  border: 0px;
   font-size: 14px;
 }
 #titleList > p {
@@ -150,7 +139,9 @@ aside {
   width: 16px;
 }
 footer {
-    margin-top: -30px;
+  position: relative;
+    top: -20px;
+    left: -15px;
 }
 footer img {
   border-bottom-left-radius: 20px;
